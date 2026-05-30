@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лендинг.</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="preloader">
+    <img src="barless.gif" alt="загрузка страницы">
+</div>
+    <header class="header">
+        <div class="logo">
+            <a href="#">
+                <img src="я.png" height="50" alt="логотип">
+            </a>
+        </div>
+        <nav class="nav">
+            <a href="#about">Обо мне</a>
+            <a href="#experience">Опыт работы</a>
+            <a href="#education">Образование</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+    </header>
+
+    <div class="about" id="about">
+        <img src="я.png" class="circular-image" alt="Мое фото">
+        <div class="aboutText">
+            <h3>Немного о себе</h3>
+            <li><b>2025 - Настоящее время:</b>  безработный (ИП)</li>
+                <li><b>Я, Игорь Войтенко (род. 26 февраля 1993, Шахтерск, Украина) —</b> Ррусскоязычный
+                 фитнес-блогер, предприниматель </li>
+                <li><b>и создатель онлайн-платформы тренировок Next</b> кгб ссср , etpfk в америку</li>
+                <li><b>1967-1967</b> кгб ссср , съебался в америку</li>
+                <li><b>хоббихорсинг </b> сделал из палки пистолет </li>
+            
+        </div>
+    </div>
+
+    <div class="experience" id="experience">
+        <div class="experienceText">
+            <h3>Опыт работы</h3>
+            <ul>
+                <li><b>2025 - Настоящее время:fdfffffffffffffffffffffff</b>  безработный (ИП)</li>
+                <li><b>2024 - 2025:</b> Работаю на себя, кладу на </li>
+                <li><b>1975-1983</b> кгб ссср , etpfk в америку</li>
+                <li><b>1967-1967</b> кгб ссср , съебался в америку</li>
+                <li><b>хоббихорсинг </b> сделал из палки пистолет </li>
+            </ul>
+        </div>
+        <img src="работа.png" class="circular-image" alt="Опыт работы">
+    </div>
+
+    <div class="education" id="education">
+        <img src="МГТУ.png" class="circular-image" alt="Образование">
+        <div class="educationText">
+            <h3>Образование</h3>
+            <p><b>ВУЗ:</b> МГТУ им. Н.Э. Баумана</p>
+            <p><b>Факультет:</b> Инженерный бизнес и менеджмент (ИБМ)</p>
+            <p><b>Кафедра:</b> ИБМ3</p>
+            <p><b>Специальность:</b> Инноватика</p>
+        </div>
+ <div style="margin-top: 20px;">
+    <h4>Смена герба</h4>
+    <button onclick="document.getElementById('gerb').src='images/colorGerb.png'">Цветной герб</button>
+    <img id="gerb" src="images/colorGerb.png" style="width:100px" alt="Герб">
+    <button onclick="document.getElementById('gerb').src='images/grayscaleGerb.svg'">Нуарный герб</button>
+</div>
+    </div>
+
+    <div class="contacts" id="contacts">
+        <button onclick="openForm()" style="margin-top: 15px; padding: 10px;">Связаться со мной</button>
+        <h3>Контакты</h3>
+        <p>Телефон: <a href="https://tenor.com/ru/view/tung-tung-tung-sahur-67-67-meme-fortnite-emote-gif-13299458995536216312">+7(800)555-35-35</a></p>
+        <p>График связи: 24 на 7</p>
+        <p>Email: <a href="https://www.kinopoisk.ru/film/259251/?socialAlias=MzQyNzQzOTU%3D">nikita300019672007@mail.ru</a></p>
+        <p>Место учебы: Алабгуа политех</p>
+        
+        <div class="map-container">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0562e840fcc8be09b119a0088b907f1543bead54b03dfbcbc453cd97dc3f8c8b&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 Войтенко Войтен Войтенович. МГТУ им. Баумана</p>
+    </footer>
+
+    <script src="index.js"></script>
+    <div id="popupForm" class="hide-popup">
+    <div class="form-content">
+        <h2>Форма связи</h2>
+        <form method="post" action="#">
+            <p><input type="text" name="name" placeholder="Ваше имя" required></p>
+            <p><input type="email" name="email" placeholder="Ваш Email" required></p>
+            <p><input type="tel" name="phone" placeholder="Ваш телефон"></p>
+            <p>
+                <input type="radio" name="status" value="student"> Студент
+                <input type="radio" name="status" value="employer"> Работодатель
+            </p>
+            <p>
+                <select name="theme">
+                    <option value="job">Предложение о работе</option>
+                    <option value="project">Проект</option>
+                    <option value="other">Другое</option>
+                </select>
+            </p>
+            <p><textarea name="message" placeholder="Ваше сообщение" rows="4"></textarea></p>
+            
+            <button type="submit">Отправить</button>
+            <button type="button" onclick="closeForm()">Закрыть</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
